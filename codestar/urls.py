@@ -17,10 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-
 urlpatterns = [
-    path("", include("blog.urls"), name="blog-urls"),
-    path('summernote/', include('django_summernote.urls')),
-    path('<slug:slug>/', views.post_detail, name='post_detail'),
     path('admin/', admin.site.urls),
+    path('summernote/', include('django_summernote.urls')),
+    path("", include("blog.urls"), name="blog-urls"),
 ]
