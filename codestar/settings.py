@@ -31,9 +31,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-jamcevoy-djangoblog-gh7nzatbhcs.ws-eu110.gitpod.io', '.herokuapp.com']
+ALLOWED_HOSTS = ['8000-jamcevoy-djangoblog-gh7nzatbhcs.ws-us110.gitpod.io', '.herokuapp.com']
 
 
 # Application definition
